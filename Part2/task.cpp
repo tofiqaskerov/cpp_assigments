@@ -38,12 +38,14 @@ void task2(){
 
 void task3(){
     int x,y;
-    double res;
+    double res, res1;
     cout << "Add first number: \n";
     cin >> x;
     cout << "Add second number: \n";
+     cin >> y;
 
-    res = sqrt(((pow(x,3)-2.0)/pow(y,2)) + ((pow(y,2) - 4.0)/(1.0/(-y))));
+     res1 =  ((pow(x,3)-2.0)/pow(y,2)) + ((pow(y,2) - 4.0)/(1.0/(-y))) ;
+     res1 > 0 ? res = sqrt(res1) :res = 0;
 
     cout << "Result: \n" << res;
 }
@@ -131,7 +133,7 @@ void task22(){
 int main(){
 //    task1();
 //    task2();
-//    task3();
+   task3();
 //    task4();
 //    task5();
 //    task11();
