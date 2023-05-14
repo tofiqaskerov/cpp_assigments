@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <algorithm>
+#include <typeinfo>
 using namespace std;
 
 
@@ -31,8 +32,6 @@ void task2(){
     cin >> y;
      
     x > y ? cout << "Result: " << x << " " << y : cout << "Result: " << y << " " << x;
-    
-    
 }
 
 /*  
@@ -94,6 +93,34 @@ void task5(){
 }
 
 
+
+/*
+ Question 5.
+ A three-digit positive integer is given. Rearrange its digits to obtain the smallest possible integer consisting of those digits
+*/ 
+
+void task11(){
+    int n;
+    cout << "Add number: \n";
+    cin >> n;
+    string result;
+    char ch = '3';
+    string convertNum  =  to_string(n);
+   cout << "*--------------------------------* \n";
+    for(int i=0; i< convertNum.length(); i++ ){
+      if( convertNum[i] ==  ch){
+          result = "Yes";
+          break;
+      }else{
+          result = "No";
+      }
+    };
+    cout << "Result:"  <<   result << "\n";
+   cout << "*--------------------------------*";
+
+}
+
+
 /*
  Question 13.
  A three-digit positive integer is given. Rearrange its digits to obtain the smallest possible integer consisting of those digits
@@ -129,14 +156,17 @@ void task18(){
 }
 
 
+
 int main(){
+ 
     // task1();
     // task2();
     // task3();
     // task4();
-    task5();
-    //  task13();
-   // task18();
+    // task5();
+    // task11();
+    // task13();
+    // task18();
+
 
 }
-
